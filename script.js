@@ -3,7 +3,7 @@
    ============================================ */
 
 let currentSlide = 0;
-const totalSlides = 8;
+const totalSlides = 9;
 
 // DOM References
 const slides = document.querySelectorAll('.slide');
