@@ -1070,7 +1070,7 @@ body {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .qa-chip {
@@ -1089,6 +1089,39 @@ body {
     border-color: rgba(124,77,255,0.5);
     color: var(--text-primary);
     transform: translateY(-3px);
+}
+
+.qr-section {
+    margin-bottom: 28px;
+}
+
+.qr-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(179,136,255,0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    animation: qrGlow 3s ease-in-out infinite;
+}
+
+.qr-image {
+    border-radius: 12px;
+    border: 3px solid rgba(179,136,255,0.3);
+}
+
+.qr-label {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+@keyframes qrGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(124,77,255,0.1); }
+    50% { box-shadow: 0 0 35px rgba(124,77,255,0.25); }
 }
 
 .thank-you {
